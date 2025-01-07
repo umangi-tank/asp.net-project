@@ -68,9 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="2.jpg" />
+    <Content Include="3.jpg" />
     <Content Include="calender.aspx" />
     <Content Include="1.png" />
     <Content Include="3.png" />
+    <Content Include="master-page\master-page.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
@@ -83,6 +85,20 @@
     </Compile>
     <Compile Include="calender.aspx.designer.cs">
       <DependentUpon>calender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master-page\master-page.aspx.cs">
+      <DependentUpon>master-page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master-page\master-page.aspx.designer.cs">
+      <DependentUpon>master-page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master-page\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master-page\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1.aspx.cs">
@@ -101,6 +117,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="master-page\Site1.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -108,6 +125,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FILES\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
